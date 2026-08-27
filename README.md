@@ -9,7 +9,6 @@ An end-to-end, edge-AI powered wildlife monitoring and eco-friendly deterrence s
 <div align="center">
   <img src="new.jpeg" alt="Prototype-Image" width="400"/>
 </div>
----
 
 ## Technical Highlights
 
@@ -114,23 +113,3 @@ The system relies on an automated, controlled chemical reaction to produce a lou
 When an animal is detected, the peristaltic pump drops water onto the solid calcium carbide. The resulting acetylene gas is contained until optimal pressure is reached, at which point the ESP32 triggers the high-voltage arc generator, combusting the gas.
 
 ---
-
----
-
-## Repository Structure
-
-```text
-├── firmware/
-│   ├── transmitter/          # ESP32/Raspberry Pi capture & LoRa code
-│   └── receiver/             # Arduino/ESP32 relay timing & ignition logic
-├── models/
-│   ├── weights/              # Exported NCNN model binaries (.param / .bin)
-│   └── train_lora11n.py      # Training script & hyperparameters
-├── hardware/
-│   ├── schematics/           # Circuit diagrams for transmitter & receiver
-│   └── cad/                  # 3D printable designs for reaction chamber
-└── README.md
-
-```
-
-```
